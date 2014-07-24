@@ -61,11 +61,5 @@ setup(
     extras_require={
         # eg: 'rst': ["docutils>=0.11"],
     },
-    
-    entry_points={
-        "console_scripts": [
-            "{{ cookiecutter.package_name }} = {{ cookiecutter.package_name }}.__main__:main"
-        ]
-    }
 
 )
