@@ -1,0 +1,3 @@
+[paths]
+default = ssh://hg@bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.repo_name }}
+github = git+ssh://git@github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
