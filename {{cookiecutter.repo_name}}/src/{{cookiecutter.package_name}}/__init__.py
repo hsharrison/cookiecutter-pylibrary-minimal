@@ -1,2 +1,1 @@
-__version__ = "{{ cookiecutter.version }}"
-
+from _{{ cookiecutter.package_name }} import __version__
