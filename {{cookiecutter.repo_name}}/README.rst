@@ -38,7 +38,7 @@ Installation
 
 ::
 
-    pip install {{ cookiecutter.distribution_name }}
+    pip install {{ cookiecutter.distribution_name }} --upgrade
 
 Documentation
 =============
