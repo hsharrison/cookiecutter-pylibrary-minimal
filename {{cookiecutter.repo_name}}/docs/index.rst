@@ -1,18 +1,21 @@
-Welcome to {{ cookiecutter.project_name }}'s documentation!
-======================================
+====================================
+{{ cookiecutter.project_name }} docs
+====================================
 
-Contents:
+Contents
+========
 
 .. toctree::
    :maxdepth: 2
 
-   readme
-   installation
-   usage
+   overview
    reference/index
    contributing
-   authors
-   changelog
+
+.. include:: ../AUTHORS.rst
+
+.. include:: ../CHANGELOG.rst
+
 
 Indices and tables
 ==================
@@ -20,4 +23,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
