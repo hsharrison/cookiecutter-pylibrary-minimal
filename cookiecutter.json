@@ -1,8 +1,9 @@
 {
-    "full_name": "Ionel Cristian Mărieș",
-    "email": "contact@ionelmc.ro",
-    "website": "http://blog.ionelmc.ro",
-    "github_username": "ionelmc",
+    "full_name": "Henry S. Harrison",
+    "email": "henry.schafer.harrison@gmail.com",
+    "website": "https://github.com/hsharrison",
+    "github_username": "hsharrison",
+    "bitbucket_username": "hharrison",
     "project_name": "Nameless",
     "repo_name": "python-nameless-minimal",
     "package_name": "nameless",
