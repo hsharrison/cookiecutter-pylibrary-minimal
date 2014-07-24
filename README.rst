@@ -10,6 +10,7 @@ Major changes in this fork
 
 * Package only supports Python >= 3.3.
 * Package set up as Mercurial repository with support for uploading to GitHub with hg-git.
+* Version stored in ``src/package-name/__version__.py``.
 
 Features
 --------

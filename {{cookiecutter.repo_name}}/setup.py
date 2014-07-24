@@ -17,9 +17,13 @@ def read(*names, **kwargs):
         encoding=kwargs.get("encoding", "utf8")
     ).read()
 
+# Read version.
+namespace = {}
+exec(read('src/{{ cookiecutter.package_name }}/__version__.py'), namespace)
+
 setup(
     name="{{ cookiecutter.distribution_name }}",
-    version="{{ cookiecutter.version }}",
+    version=namespace['__version__'],
     license="BSD",
     description="{{ cookiecutter.project_short_description }}",
     long_description="%s\n%s" % (read("README.rst"), re.sub(":obj:`~?(.*?)`", r"``\1``", read("CHANGELOG.rst"))),
@@ -40,13 +44,9 @@ setup(
         "Operating System :: POSIX",
         "Operating System :: Microsoft :: Windows",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: Implementation :: CPython",
-        "Programming Language :: Python :: Implementation :: PyPy",
         "Topic :: Utilities",
     ],
     keywords=[
