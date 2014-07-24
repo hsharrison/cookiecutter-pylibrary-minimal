@@ -5,8 +5,8 @@ cookiecutter-pylibrary
 `Cookiecutter <https://github.com/audreyr/cookiecutter>`_ template for a Python python library. This is largely designed
 to address this `blog post about packaging python libraries <http://blog.ionelmc.ro/2014/05/25/python-packaging/>`_.
 
-Changes in this fork
---------------------
+Major changes in this fork
+--------------------------
 
 * Package only supports Python >= 3.3.
 * Package set up as Mercurial repository with support for uploading to GitHub with hg-git.
