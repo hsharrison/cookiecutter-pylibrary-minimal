@@ -2,31 +2,36 @@
 {{ cookiecutter.project_name }}
 ===============================
 
-.. image:: http://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.png
+{{ cookiecutter.project_short_description }}
+
++--------------------+-------------------+---------------+
+| | |travis-badge|   | | |version-badge| | | |git-badge| |
+| | |coverage-badge| | | |license-badge| | | |hg-badge|  |
++--------------------+-------------------+---------------+
+
+.. |travis-badge| image:: http://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.png?style=flat
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
 
-.. See: http://www.appveyor.com/docs/status-badges
-
-.. image:: https://ci.appveyor.com/api/projects/status/<security-token>/branch/master
-    :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
-
-.. image:: http://img.shields.io/coveralls/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/master.png
+.. |coverage-badge| image:: http://img.shields.io/coveralls/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.png?style=flat
     :alt: Coverage Status
     :target: https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
 
-.. image:: http://img.shields.io/pypi/v/{{ cookiecutter.distribution_name }}.png
-    :alt: PYPI Package
+.. |version-badge| image:: http://img.shields.io/pypi/v/{{ cookiecutter.distribution_name }}.png?style=flat
+    :alt: PyPi Package
     :target: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
 
-.. image:: http://img.shields.io/pypi/dm/{{ cookiecutter.distribution_name }}.png
-    :alt: PYPI Package
+.. |license-badge| image:: http://img.shields.io/badge/license-MIT-blue.png?style=flat
+    :alt: License
     :target: https://pypi.python.org/pypi/{{ cookiecutter.distribution_name }}
 
-{{ cookiecutter.project_short_description }}
+.. |git-badge| image:: http://img.shields.io/badge/repo-git-lightgrey.png?style=flat
+    :alt: Git Repository
+    :target: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
 
-* Free software: BSD license
+.. |hg-badge| image:: http://img.shields.io/badge/repo-hg-lightgrey.png?style=flat
+    :alt: Mercurial Repository
+    :target: https://bitbucket.org/{{ cookiecutter.bitbucket_username }}/{{ cookiecutter.repo_name }}
 
 Installation
 ============
