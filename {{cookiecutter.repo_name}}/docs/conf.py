@@ -10,7 +10,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinxcontrib.napoleon',
-    'sphinxcontrib.intersphinx',
+    'sphinx.ext.intersphinx',
 ]
 
 if os.getenv('SPELLCHECK'):
