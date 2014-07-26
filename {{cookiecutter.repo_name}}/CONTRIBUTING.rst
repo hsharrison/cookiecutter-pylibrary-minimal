@@ -83,3 +83,7 @@ Tips
 To run a subset of tests::
 
     tox -e envname -- py.test -k test_myfeature
+
+To run all the tests in *parallel* (you need to ``pip install detox``)::
+
+    detox
