@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 import re
 import os
+import sys
+
+MOCK_MODULES = []
+
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
@@ -12,6 +16,31 @@ extensions = [
     'sphinxcontrib.napoleon',
     'sphinx.ext.intersphinx',
 ]
+
+
+class Mock(object):
+
+    __all__ = []
+
+    def __init__(self, *args, **kwargs):
+        pass
+
+    def __call__(self, *args, **kwargs):
+        return Mock()
+
+    @classmethod
+    def __getattr__(cls, name):
+        if name in ('__file__', '__path__'):
+            return '/dev/null'
+        elif name[0] == name[0].upper():
+            mockType = type(name, (), {})
+            mockType.__module__ = __name__
+            return mockType
+        else:
+            return Mock()
+
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = Mock()
 
 if os.getenv('SPELLCHECK'):
     extensions += 'sphinxcontrib.spelling',
