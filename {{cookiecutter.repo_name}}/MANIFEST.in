@@ -4,8 +4,6 @@ graft tests
 
 include .bumpversion.cfg
 include .coveragerc
-include .isort.cfg
-include .pylintrc
 
 include AUTHORS.rst
 include CHANGELOG.rst
