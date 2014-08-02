@@ -17,13 +17,9 @@ def read(*names, **kwargs):
         encoding=kwargs.get("encoding", "utf8")
     ).read()
 
-# Read version.
-namespace = {}
-exec(read('src/{{ cookiecutter.package_name }}/__version__.py'), namespace)
-
 setup(
     name="{{ cookiecutter.distribution_name }}",
-    version=namespace['__version__'],
+    version="{{ cookiecutter.version }}",
     license="BSD",
 
     description="{{ cookiecutter.project_short_description }}",

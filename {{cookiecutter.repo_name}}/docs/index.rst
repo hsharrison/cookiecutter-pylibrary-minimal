@@ -9,7 +9,7 @@ Contents
    :maxdepth: 2
 
    overview
-   reference/index
+   reference
    contributing
 
 .. include:: ../AUTHORS.rst
