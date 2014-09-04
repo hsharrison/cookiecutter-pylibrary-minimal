@@ -58,12 +58,7 @@ Generate your project::
 
 After this you can create the initial repository (make sure you create *empty* `BitBucket <https://bitbucket.org/repo/create>`_ and `GitHub <https://github.com/new>`_ projects)::
 
-    hg init
-    mv hgrc .hg
-    hg add
-    hg commit -m 'initial skeleton'
     hg push
-    hg bookmark -r default master  # Necessary for hg-git.
     hg push github
 
 Then:
